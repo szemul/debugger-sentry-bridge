@@ -1,0 +1,47 @@
+{
+    "name": "szemul/debugger-sentry-bridge",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "repositories": {
+        "FIXME-remove-after-publishing-database-to-packagist": {
+            "type": "github",
+            "url": "https://github.com/szemul/database.git"
+        },
+        "FIXME-remove-after-publishing-debugger-to-packagist": {
+            "type": "github",
+            "url": "https://github.com/szemul/debugger.git"
+        },
+        "FIXME-remove-after-publishing-not-set-value-to-packagist": {
+            "type": "github",
+            "url": "https://github.com/szemul/not-set-value.git"
+        }
+    },
+    "require": {
+        "sentry/sentry": "^3.3.2",
+        "szemul/debugger": "dev-main"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0.0",
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan": "^0.12.80",
+        "phpunit/phpunit": "^9.5.5",
+        "sentry/sdk": "^3.1.0",
+        "szemul/database": "dev-main",
+        "szemul/not-set-value": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Szemul\\DebuggerSentryBridge\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Szemul\\DebuggerSentryBridge\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
