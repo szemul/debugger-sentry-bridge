@@ -1689,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/debugger.git",
-                "reference": "ece4b5f4af433e62a3d6e74c535d0712d437aa9e"
+                "reference": "5688bfe190a66f7479f614e717aaf1e3fb032593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/debugger/zipball/ece4b5f4af433e62a3d6e74c535d0712d437aa9e",
-                "reference": "ece4b5f4af433e62a3d6e74c535d0712d437aa9e",
+                "url": "https://api.github.com/repos/szemul/debugger/zipball/5688bfe190a66f7479f614e717aaf1e3fb032593",
+                "reference": "5688bfe190a66f7479f614e717aaf1e3fb032593",
                 "shasum": ""
             },
             "require-dev": {
@@ -1720,11 +1720,12 @@
             "license": [
                 "MIT"
             ],
+            "description": "Debugger",
             "support": {
                 "source": "https://github.com/szemul/debugger/tree/main",
                 "issues": "https://github.com/szemul/debugger/issues"
             },
-            "time": "2021-08-20T09:57:36+00:00"
+            "time": "2021-08-20T23:38:42+00:00"
         }
     ],
     "packages-dev": [
@@ -2909,16 +2910,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.94",
+            "version": "0.12.95",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6"
+                "reference": "4ffddfe86e85dcc494a47e5f3dcfd1a2dccdce58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6",
-                "reference": "3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4ffddfe86e85dcc494a47e5f3dcfd1a2dccdce58",
+                "reference": "4ffddfe86e85dcc494a47e5f3dcfd1a2dccdce58",
                 "shasum": ""
             },
             "require": {
@@ -2949,7 +2950,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.94"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.95"
             },
             "funding": [
                 {
@@ -2969,7 +2970,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-30T09:05:27+00:00"
+            "time": "2021-08-20T12:53:41+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -5511,12 +5512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/database.git",
-                "reference": "ee6139605651a06cc190d13ec77857f76201ffee"
+                "reference": "65dcbec2fa1e378193c0687763b40be3fd6f6fd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/database/zipball/ee6139605651a06cc190d13ec77857f76201ffee",
-                "reference": "ee6139605651a06cc190d13ec77857f76201ffee",
+                "url": "https://api.github.com/repos/szemul/database/zipball/65dcbec2fa1e378193c0687763b40be3fd6f6fd3",
+                "reference": "65dcbec2fa1e378193c0687763b40be3fd6f6fd3",
                 "shasum": ""
             },
             "require": {
@@ -5552,11 +5553,12 @@
             "license": [
                 "MIT"
             ],
+            "description": "Simple wrapper for PDO to make it easier to use and easier to mock",
             "support": {
                 "source": "https://github.com/szemul/database/tree/main",
                 "issues": "https://github.com/szemul/database/issues"
             },
-            "time": "2021-08-20T10:28:14+00:00"
+            "time": "2021-08-21T00:37:30+00:00"
         },
         {
             "name": "szemul/not-set-value",
@@ -5564,12 +5566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/not-set-value.git",
-                "reference": "f68a54175511fbba0495fc00e91281543395ad0a"
+                "reference": "4a20804c9904473b7040d247b9404e23fa9e654f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/not-set-value/zipball/f68a54175511fbba0495fc00e91281543395ad0a",
-                "reference": "f68a54175511fbba0495fc00e91281543395ad0a",
+                "url": "https://api.github.com/repos/szemul/not-set-value/zipball/4a20804c9904473b7040d247b9404e23fa9e654f",
+                "reference": "4a20804c9904473b7040d247b9404e23fa9e654f",
                 "shasum": ""
             },
             "require": {
@@ -5589,11 +5591,12 @@
             "license": [
                 "MIT"
             ],
+            "description": "Simple package to represent a value that has not been set",
             "support": {
                 "source": "https://github.com/szemul/not-set-value/tree/main",
                 "issues": "https://github.com/szemul/not-set-value/issues"
             },
-            "time": "2021-08-20T09:29:21+00:00"
+            "time": "2021-08-20T23:25:38+00:00"
         },
         {
             "name": "theseer/tokenizer",

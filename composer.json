@@ -1,5 +1,6 @@
 {
     "name": "szemul/debugger-sentry-bridge",
+    "description": "This package allows enriching Sentry errors and traces from the debug information collected by the szemul/debugger package",
     "license": "MIT",
     "minimum-stability": "stable",
     "repositories": {
