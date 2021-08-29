@@ -12,3 +12,4 @@ composer.phar
 .DS_Store
 coverage.*
 docker-compose.override.yml
+/.phpunit.result.cache

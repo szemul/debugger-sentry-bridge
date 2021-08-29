@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9ecd12cae51e3f77ee3c34f66df3c3f",
+    "content-hash": "b835731fb8ed5d03e40de6a0fb542587",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1685,47 +1685,48 @@
         },
         {
             "name": "szemul/debugger",
-            "version": "dev-main",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/debugger.git",
-                "reference": "5688bfe190a66f7479f614e717aaf1e3fb032593"
+                "reference": "8cdae43358c3d36fbd656ce5f537673ec3aca72a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/debugger/zipball/5688bfe190a66f7479f614e717aaf1e3fb032593",
-                "reference": "5688bfe190a66f7479f614e717aaf1e3fb032593",
+                "url": "https://api.github.com/repos/szemul/debugger/zipball/8cdae43358c3d36fbd656ce5f537673ec3aca72a",
+                "reference": "8cdae43358c3d36fbd656ce5f537673ec3aca72a",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0.0",
                 "jetbrains/phpstorm-attributes": "^1.0",
                 "mockery/mockery": "^1.0",
-                "phpstan/extension-installer": "^1.1.0",
                 "phpstan/phpstan": "^0.12.80",
-                "phpunit/phpunit": "^9.5.5"
+                "phpunit/phpunit": "^9.5.5",
+                "psr/http-message": "^1.0.1"
             },
-            "default-branch": true,
+            "suggest": {
+                "psr/http-message": "To use the HTTP debug events"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Szemul\\Debugger\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Szemul\\Debugger\\Test\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Debugger",
             "support": {
-                "source": "https://github.com/szemul/debugger/tree/main",
-                "issues": "https://github.com/szemul/debugger/issues"
+                "issues": "https://github.com/szemul/debugger/issues",
+                "source": "https://github.com/szemul/debugger/tree/v1.0.1"
             },
-            "time": "2021-08-20T23:38:42+00:00"
+            "time": "2021-08-28T12:19:30+00:00"
         }
     ],
     "packages-dev": [
@@ -2910,16 +2911,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.95",
+            "version": "0.12.96",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "4ffddfe86e85dcc494a47e5f3dcfd1a2dccdce58"
+                "reference": "a98bdc51318f20fcae8c953d266f81a70254917f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4ffddfe86e85dcc494a47e5f3dcfd1a2dccdce58",
-                "reference": "4ffddfe86e85dcc494a47e5f3dcfd1a2dccdce58",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a98bdc51318f20fcae8c953d266f81a70254917f",
+                "reference": "a98bdc51318f20fcae8c953d266f81a70254917f",
                 "shasum": ""
             },
             "require": {
@@ -2950,7 +2951,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.95"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.96"
             },
             "funding": [
                 {
@@ -2970,7 +2971,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-20T12:53:41+00:00"
+            "time": "2021-08-21T11:55:13+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -5508,22 +5509,22 @@
         },
         {
             "name": "szemul/database",
-            "version": "dev-main",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/database.git",
-                "reference": "65dcbec2fa1e378193c0687763b40be3fd6f6fd3"
+                "reference": "46fba63218746c4d5584a53cacd9c0c1f400cb9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/database/zipball/65dcbec2fa1e378193c0687763b40be3fd6f6fd3",
-                "reference": "65dcbec2fa1e378193c0687763b40be3fd6f6fd3",
+                "url": "https://api.github.com/repos/szemul/database/zipball/46fba63218746c4d5584a53cacd9c0c1f400cb9a",
+                "reference": "46fba63218746c4d5584a53cacd9c0c1f400cb9a",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
                 "php": "^8.0",
-                "szemul/not-set-value": "dev-main"
+                "szemul/not-set-value": "^1.0.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0.0",
@@ -5532,71 +5533,67 @@
                 "nesbot/carbon": "^2.0",
                 "phpstan/phpstan": "^0.12.80",
                 "phpunit/phpunit": "^9.5.5",
-                "szemul/debugger": "dev-main"
+                "szemul/debugger": "^1.0.1"
             },
             "suggest": {
                 "nesbot/carbon": "Extends the DateTime classes",
                 "szemul/debugger": "Allows debugging and tracing the database queries"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Szemul\\Database\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Szemul\\Database\\Test\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Simple wrapper for PDO to make it easier to use and easier to mock",
             "support": {
-                "source": "https://github.com/szemul/database/tree/main",
-                "issues": "https://github.com/szemul/database/issues"
+                "issues": "https://github.com/szemul/database/issues",
+                "source": "https://github.com/szemul/database/tree/v1.0.1"
             },
-            "time": "2021-08-21T00:37:30+00:00"
+            "time": "2021-08-29T02:36:25+00:00"
         },
         {
             "name": "szemul/not-set-value",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/not-set-value.git",
-                "reference": "4a20804c9904473b7040d247b9404e23fa9e654f"
+                "reference": "24b05f59c2685dbcdb9906f50d9cc4ad84f70850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/not-set-value/zipball/4a20804c9904473b7040d247b9404e23fa9e654f",
-                "reference": "4a20804c9904473b7040d247b9404e23fa9e654f",
+                "url": "https://api.github.com/repos/szemul/not-set-value/zipball/24b05f59c2685dbcdb9906f50d9cc4ad84f70850",
+                "reference": "24b05f59c2685dbcdb9906f50d9cc4ad84f70850",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": "^7.2|^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0.0",
                 "phpstan/phpstan": "^0.12.80"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Szemul\\NotSetValue\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Simple package to represent a value that has not been set",
             "support": {
-                "source": "https://github.com/szemul/not-set-value/tree/main",
-                "issues": "https://github.com/szemul/not-set-value/issues"
+                "issues": "https://github.com/szemul/not-set-value/issues",
+                "source": "https://github.com/szemul/not-set-value/tree/v1.0.0"
             },
-            "time": "2021-08-20T23:25:38+00:00"
+            "time": "2021-08-28T01:43:20+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -5709,14 +5706,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "szemul/debugger": 20,
-        "szemul/database": 20,
-        "szemul/not-set-value": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.0.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
