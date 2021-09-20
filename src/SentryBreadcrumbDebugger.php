@@ -16,6 +16,17 @@ class SentryBreadcrumbDebugger implements DebuggerInterface, SentryOperationCons
     {
     }
 
+    /**
+     * @return array<string,mixed>|null
+     */
+    public function __debugInfo(): ?array
+    {
+        return [
+            'hub'               => '*** Instance of ' . get_class($this->hub),
+            'metadataFormatter' => $this->metadataFormatter,
+        ];
+    }
+
     public function handleEvent(DebugEventInterface $event): void
     {
         $breadcrumb = $this->convertEventToBreadcrumb($event);

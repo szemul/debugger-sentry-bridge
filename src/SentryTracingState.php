@@ -11,6 +11,17 @@ class SentryTracingState
     private ?Transaction $transaction = null;
     private ?Span        $span        = null;
 
+    /**
+     * @return array<string,mixed>|null
+     */
+    public function __debugInfo(): ?array
+    {
+        return [
+            'transaction' => null === $this->transaction ? null : '** Instance of ' . get_class($this->transaction),
+            'span'        => null === $this->span ? null : '** Instance of ' . get_class($this->span),
+        ];
+    }
+
     public function getTransaction(): ?Transaction
     {
         return $this->transaction;
