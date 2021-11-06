@@ -17,6 +17,34 @@ class SentryTracingStateTest extends TestCase
 {
     use MockeryPHPUnitIntegration;
 
+    public function testDebugInfoWithNoData(): void
+    {
+        $sut      = new SentryTracingState();
+        $expected = [
+            'transaction' => null,
+            'span'        => null,
+        ];
+
+        $this->assertEquals($expected, $sut->__debugInfo());
+    }
+
+    public function testDebugInfoWithData(): void
+    {
+        $span        = $this->getSpan();
+        $transaction = $this->getTransaction();
+
+        $sut      = new SentryTracingState();
+        $sut->setSpan($span);
+        $sut->setTransaction($transaction);
+
+        $expected = [
+            'transaction' => '** Instance of ' . get_class($transaction),
+            'span'        => '** Instance of ' . get_class($span),
+        ];
+
+        $this->assertEquals($expected, $sut->__debugInfo());
+    }
+
     public function testSpanHandling(): void
     {
         $state = new SentryTracingState();

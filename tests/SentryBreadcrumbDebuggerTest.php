@@ -39,14 +39,27 @@ class SentryBreadcrumbDebuggerTest extends TestCase
     private const HTTP_RESPONSE_BODY = 'testBody';
 
     private HubInterface|MockInterface|LegacyMockInterface $hub;
+    private MetadataFormatter                              $metadataFormatter;
     private SentryBreadcrumbDebugger                       $sut;
 
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->hub = Mockery::mock(HubInterface::class);
-        $this->sut = new SentryBreadcrumbDebugger($this->hub, new MetadataFormatter()); // @phpstan-ignore-line
+        $this->hub               = Mockery::mock(HubInterface::class);
+        $this->metadataFormatter = new MetadataFormatter();
+
+        $this->sut = new SentryBreadcrumbDebugger($this->hub, $this->metadataFormatter); // @phpstan-ignore-line
+    }
+
+    public function testDebugInfo(): void
+    {
+        $expected = [
+            'hub'               => '*** Instance of ' . get_class($this->hub),
+            'metadataFormatter' => $this->metadataFormatter,
+        ];
+
+        $this->assertEquals($expected, $this->sut->__debugInfo());
     }
 
     public function testSuccessfulDatabaseEvent(): void
