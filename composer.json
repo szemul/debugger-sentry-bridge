@@ -13,10 +13,10 @@
         "guzzlehttp/psr7": "^2.0.0",
         "jetbrains/phpstorm-attributes": "^1.0",
         "mockery/mockery": "^1.0",
-        "phpstan/phpstan": "^0.12.80",
+        "phpstan/phpstan": "^1.4.0",
         "phpunit/phpunit": "^9.5.5",
         "sentry/sdk": "^3.1.0",
-        "szemul/database": "^1.0.0"
+        "szemul/database": "^1.0.0|^2.0.0"
     },
     "suggest": {
         "szemul/database": "For capturing database events"
