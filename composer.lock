@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83d9362c1f7f77e355a00bd179449e68",
+    "content-hash": "ba92fcdbcccbec82106498219aea45c1",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -5574,16 +5574,16 @@
         },
         {
             "name": "szemul/database",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/szemul/database.git",
-                "reference": "ef3991b33188a374f675fc79eb2637a20c36ef6f"
+                "reference": "04f33cd026e876c15c36f60bb9c7011abde3f169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szemul/database/zipball/ef3991b33188a374f675fc79eb2637a20c36ef6f",
-                "reference": "ef3991b33188a374f675fc79eb2637a20c36ef6f",
+                "url": "https://api.github.com/repos/szemul/database/zipball/04f33cd026e876c15c36f60bb9c7011abde3f169",
+                "reference": "04f33cd026e876c15c36f60bb9c7011abde3f169",
                 "shasum": ""
             },
             "require": {
@@ -5617,9 +5617,9 @@
             "description": "Simple wrapper for PDO to make it easier to use and easier to mock",
             "support": {
                 "issues": "https://github.com/szemul/database/issues",
-                "source": "https://github.com/szemul/database/tree/2.0.0"
+                "source": "https://github.com/szemul/database/tree/3.0.0"
             },
-            "time": "2022-01-16T03:44:44+00:00"
+            "time": "2022-10-03T15:02:47+00:00"
         },
         {
             "name": "szemul/not-set-value",
@@ -5778,5 +5778,5 @@
         "php": "^8.0.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
