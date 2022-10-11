@@ -16,7 +16,7 @@
         "phpstan/phpstan": "^1.4.0",
         "phpunit/phpunit": "^9.5.5",
         "sentry/sdk": "^3.1.0",
-        "szemul/database": "^1.0.0|^2.0.0"
+        "szemul/database": "^1.0.0|^2.0.0|^3.0.0"
     },
     "suggest": {
         "szemul/database": "For capturing database events"
