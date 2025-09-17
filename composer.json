@@ -5,7 +5,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^8.0.0",
-        "sentry/sentry": "^3.3.2",
+        "sentry/sentry": "^3.3.2|^4.0",
         "szemul/debugger": "^1.0.1|^2.0.0"
     },
     "require-dev": {
@@ -13,9 +13,9 @@
         "guzzlehttp/psr7": "^2.0.0",
         "jetbrains/phpstorm-attributes": "^1.0",
         "mockery/mockery": "^1.0",
-        "phpstan/phpstan": "^1.4.0",
-        "phpunit/phpunit": "^9.5.5",
-        "sentry/sdk": "^3.1.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^12",
+        "sentry/sdk": "^3.1.0|^4.0.0",
         "szemul/database": "^1.0.0|^2.0.0|^3.0.0"
     },
     "suggest": {

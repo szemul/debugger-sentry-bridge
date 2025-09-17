@@ -96,7 +96,7 @@ class SentryTracingDebuggerTest extends TestCase
         $this->sut->handleEvent($this->getMockEvent());
 
         // Noop assert to avoid phpunit complaining
-        $this->assertTrue(true);
+        $this->assertTrue(true); // @phpstan-ignore-line
     }
 
     public function testNoSpanOrTransaction_shouldNotBeHandled(): void
@@ -107,7 +107,7 @@ class SentryTracingDebuggerTest extends TestCase
         $sut->handleEvent($this->getMockEvent());
 
         // Noop assert to avoid phpunit complaining
-        $this->assertTrue(true);
+        $this->assertTrue(true); //@phpstan-ignore-line
     }
 
     private function getMockEvent(): DebugEventInterface|MockInterface|LegacyMockInterface

@@ -106,7 +106,7 @@ class SentryBreadcrumbDebuggerTest extends TestCase
         $this->sut->handleEvent($this->getMockEvent());
 
         // Noop assert to avoid phpunit complaining
-        $this->assertTrue(true);
+        $this->assertTrue(true); //@phpstan-ignore-line
     }
 
     private function getMockEvent(): DebugEventInterface|MockInterface|LegacyMockInterface
